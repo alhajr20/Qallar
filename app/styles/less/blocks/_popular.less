@@ -1,0 +1,108 @@
+.popular {
+    &__title {
+        text-align: center;
+        font-size: 2.8rem;
+        margin-top: 30px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, auto));
+        grid-template-rows: min-content;
+        grid-auto-rows: min-content;
+        justify-content: center;
+        justify-items: center;
+        gap: 50px;
+        margin-top: 30px;
+
+        a {
+            color: @main-color;
+            text-decoration: none;
+        }
+    }
+
+    &__item {
+        box-shadow: 0 0 10px rgba(45, 62, 80, .3);
+        transition: .5s all;
+        border-radius: 10px;
+
+        h3 {
+            transition: .5s all;
+        }
+
+        img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        figcaption {
+            padding: 20px;
+        }
+
+        p {
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(45, 62, 80, .8);
+            transform: scale(1.1);
+        }
+
+        &:hover h3 {
+            color: @second-color;
+        }
+
+        &-price {
+            margin-top: 10px;
+            span {
+                text-decoration: line-through;
+                margin-right: 10px;
+            }
+
+            strong {
+                font-size: 1.125rem;
+            }
+        }
+
+        &-buy {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .input-group {
+                margin-top: 10px;
+                background-color: @main-color;
+                color: #fff;
+
+                input {
+                    width: 50px;
+                    font-size: 14px;
+                    text-align: center;
+                    background: none;
+                    color: #fff;
+                    border: none;
+                }
+
+                span {
+                    button {
+                        color: #fff;
+                        padding: 5px 10px;
+                        cursor: pointer;
+                        background: none;
+                        border: none;
+                    }
+                }
+            }
+
+            a {
+                background-color: @second-color;
+                color: #fff;
+                padding: 5px 15px;
+                border-radius: 4px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,4 +1,25 @@
 @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+@font-face {
   font-family: 'roboto-oh5';
   font-style: normal;
   font-weight: 400;
@@ -47,11 +68,17 @@ textarea:required:valid {
   border-color: green;
 }
 body {
-  font-family: roboto-oh5, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.65;
   color: #333;
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
+}
+.container {
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
 }
