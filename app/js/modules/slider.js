@@ -10,8 +10,6 @@ function slider(items, parent, prevBtn, nextBtn, wrapper, inner) {
           slidesField = document.querySelector(inner),
           width = window.getComputedStyle(slidesWrapper).width;
 
-    console.log(slidesField);
-
     slidesField.style.width = 100 * slides.length + '%';
     slidesField.style.display = 'flex';
     slidesField.style.transition = '0.5s all';
@@ -36,8 +34,8 @@ function slider(items, parent, prevBtn, nextBtn, wrapper, inner) {
         dot.style.cssText = `
             box-sizing: content-box;
             flex: 0 1 auto;
-            width: 35px;
-            height: 5px;
+            width: 20px;
+            height: 20px;
             margin-right: 3px;
             margin-left: 3px;
             cursor: pointer;
@@ -46,6 +44,7 @@ function slider(items, parent, prevBtn, nextBtn, wrapper, inner) {
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
             opacity: .2;
+            border-radius: 100%;
             transition: opacity .6s ease;
         `;
         if (i == 0) {

@@ -10,7 +10,7 @@
         top: 0;
         left: 0;
         background-color: rgba(45, 62, 80, .8);
-        width: 40%;
+        width: 30%;
         padding: 30px;
         color: #fff;
         display: flex;
@@ -60,4 +60,40 @@
     margin-right: 15%;
     margin-left: 15%;
     list-style: none;
+}
+
+@media screen and (max-width: 1323px) {
+    .promo {
+        &__info {
+            width: 50%;
+            left: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .promo {
+        &__next, &__prev {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .promo {
+        &__info {
+            padding: 20px;
+            left: 0;
+            width: 80%;
+
+            p {
+                font-size: 14px;
+            }
+
+            a {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+        }
+    }
 }

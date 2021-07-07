@@ -1,0 +1,23 @@
+.insta__wrapper {
+  padding: 50px 0;
+}
+.insta__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.insta__item img {
+  width: 20%;
+}
+.insta__item figcaption {
+  margin-top: 20px;
+}
+.insta__item figcaption p {
+  margin-top: 20px;
+}
+.insta__item figcaption a {
+  display: block;
+  padding: 10px 25px;
+  margin-top: 20px;
+}
