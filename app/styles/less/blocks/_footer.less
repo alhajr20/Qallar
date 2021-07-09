@@ -1,0 +1,51 @@
+.footer {
+    background-color: @main-color;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #fff;
+    }
+
+    &__logo {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    &__phone {
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    &__times {
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        &__phone {
+            margin-top: 30px;
+        }
+
+        &__times {
+            margin-top: 30px;
+        }
+    }
+}

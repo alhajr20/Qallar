@@ -54,7 +54,7 @@ function slider(items, parent, prevBtn, nextBtn, wrapper, inner) {
         arrDots.push(dot);
     }
 
-    next.addEventListener('click', function() {
+    function nextSliderMove() {
         if (offset == +width.slice(0, width.length - 2) * (slides.length - 1)) {
             offset = 0;
         } else {
@@ -70,8 +70,12 @@ function slider(items, parent, prevBtn, nextBtn, wrapper, inner) {
         }
 
         arrDots.forEach(dot => dot.style.opacity = '.5');
-        arrDots[slideIndex - 1].style.opacity = 1; 
-    });
+        arrDots[slideIndex - 1].style.opacity = 1;
+    }
+
+    next.addEventListener('click', nextSliderMove);
+
+    setInterval(nextSliderMove, 5000);
 
     prev.addEventListener('click', function() {
         if (offset == 0) {

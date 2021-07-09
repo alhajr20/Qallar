@@ -51,7 +51,8 @@
     }
 
     &__cart {
-        button {
+        position: relative;
+        button.cartBtn {
             position: relative;
             background: none;
             border: none;
@@ -77,6 +78,48 @@
                 color: #fff;
             }
         }
+
+        .dropdown {
+            min-width: 400px;
+            position: absolute;
+            right: 0;
+            top: 120%;
+            z-index: 3;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+            &__head {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+
+                button {
+                    background: none;
+                    border: none;
+                    font-size: 20px;
+                    transition: .3s all;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+
+            &__bottom {
+                padding: 10px;
+                button {
+                    display: block;
+                    padding: 10px 25px;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    background-color: @main-color;
+                    border: none;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
     &__hamburger {
@@ -90,6 +133,7 @@
             justify-content: space-between;
             padding-right: 20px;
             padding-left: 20px;
+            padding-bottom: 2rem;
         }
 
         &__logo {
@@ -107,7 +151,7 @@
             left: -1500px;
             background-color: @main-color;
             height: 100%;
-            z-index: 5;
+            z-index: 6;
             justify-content: center;
             align-items: center;
             transition: all .5s;
