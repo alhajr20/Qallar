@@ -79,11 +79,16 @@
             }
         }
 
+        &:hover .dropdown {
+            display: block;
+        }
+
         .dropdown {
+            display: none;
             min-width: 400px;
             position: absolute;
             right: 0;
-            top: 120%;
+            top: 100%;
             z-index: 3;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -103,6 +108,24 @@
                     &:hover {
                         color: red;
                     }
+                }
+            }
+
+            &__wrapper {
+                padding: 10px;
+            }
+
+            &__item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    width: 80px;
+                    height: 60px;
+                }
+
+                figcaption {
+                    margin-left: 50px;
                 }
             }
 
