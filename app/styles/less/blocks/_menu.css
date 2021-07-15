@@ -1,0 +1,10 @@
+.menu__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, auto));
+  grid-template-rows: min-content;
+  grid-auto-rows: min-content;
+  justify-content: center;
+  justify-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
