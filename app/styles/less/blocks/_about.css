@@ -1,0 +1,17 @@
+.about {
+  margin-top: 50px;
+}
+.about__title {
+  font-size: 44px;
+}
+.about__wrapper {
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+.about__wrapper h2 {
+  font-size: 30px;
+}
+.about__wrapper p {
+  margin-top: 30px;
+  line-height: 40px;
+}
