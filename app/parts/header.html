@@ -7,12 +7,26 @@
 	<!-- <base href="/"> -->
 
 	<title><!--#echo var="title" --></title>
-	<meta name="description" content="Qallar - Restaurant in Grozny">
+	<meta name="title" content="Qallar - Еда без границ.">
+	<meta name="description" content="Qallar - ресторан в Грозном с удобной доставкой и вкусными ценами.">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://metatags.io/">
+	<meta property="og:title" content="Qallar - Еда без границ.">
+	<meta property="og:description" content="Qallar - ресторан в Грозном с удобной доставкой и вкусными ценами.">
+	<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://metatags.io/">
+	<meta property="twitter:title" content="Qallar - Еда без границ.">
+	<meta property="twitter:description" content="Qallar - ресторан в Грозном с удобной доставкой и вкусными ценами.">
+	<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no user-scalable=no user-scalable=no user-scalable=no user-scalable=no">
+
+	<link rel="icon" href="images/src/qallar-logo.jpeg">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.min.css">
@@ -26,7 +40,7 @@
 		</div>
 		<div class="header__navWrapper">
 			<nav class="header__nav">
-				<button class="close-btn">
+				<button class="close-btn" aria-label="close btn">
 					<i class="fas fa-times"></i>
 				</button>
 				<ul>
@@ -37,13 +51,13 @@
 					<li><a href="../delivery.html">Доставка и оплата</a></li>
 				</ul>
 			</nav>
-			<div class="header__hamburger">
+			<div class="header__hamburger" aria-label="hamburger button">
 				<button>
 					<i class="fas fa-bars"></i>
 				</button>
 			</div>
 			<div class="header__cart">
-				<button class="cartBtn">
+				<button class="cartBtn" aria-label="shopping cart">
 					<i class="fas fa-shopping-cart"></i>
 				</button>
 				<div class="dropdown">

@@ -1,0 +1,13 @@
+.delivery__title {
+  font-size: 44px;
+  margin-top: 50px;
+}
+.delivery__wrapper {
+  padding-bottom: 50px;
+}
+.delivery__wrapper dl dt {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
