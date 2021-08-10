@@ -18,6 +18,181 @@
     }
 }
 
+.basket {
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: -2000px;
+    background-color: #fff;
+    height: 100%;
+    z-index: 10;
+    padding: 50px 30px;
+    color: @main-color;
+    transition: all .3s;
+
+    &__head {
+        button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: @main-color;
+            border: 1px solid #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .name {
+            text-align: center;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        img {
+            width: 120px;
+            height: 90px;
+            margin-right: 50px;
+        }
+
+        &-buy {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .input-group {
+                margin-top: 5px;
+                background-color: @main-color;
+                color: #fff;
+
+                input {
+                    width: 50px;
+                    font-size: 14px;
+                    text-align: center;
+                    background: none;
+                    color: #fff;
+                    border: none;
+                }
+
+                span {
+                    button {
+                        color: #fff;
+                        padding: 5px 10px;
+                        cursor: pointer;
+                        background: none;
+                        border: none;
+                    }
+                }
+            }
+
+            a {
+                background-color: @second-color;
+                color: #fff;
+                padding: 5px 15px;
+                border-radius: 4px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__total {
+        margin-top: 50px;
+        border-top: 1px solid @main-color;
+    }
+
+    &__footer {
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+        width: 100%;
+        padding-right: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            background: @main-color;
+            color: #fff;
+            font-weight: 700;
+            border: none;
+        }
+    }
+}
+
+.basket-active {
+    right: 0;
+}
+
+@media screen and (max-width: 1340px) {
+    .basket {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .basket {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .basket {
+        width: 80%;
+
+        &__footer {
+            justify-content: space-around;
+            left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .basket {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .basket {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .basket {
+        &__item {
+            img {
+                width: 100px;
+                height: 80px;
+                margin-right: 20px;
+            }
+
+            &-title {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 308px) {
+    .basket {
+        &__item {
+            img {
+                width: 80px;
+                height: 60px;
+            }
+        }
+    }
+}
+
 @import '_config';
 @import 'blocks/**/*';
 @import './blocks/_header.less';

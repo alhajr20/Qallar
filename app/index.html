@@ -1,6 +1,49 @@
 <!--#set var="title" value="Qallar | Главная" -->
 <!--#include virtual="/parts/header.html" -->
+	<div class="basket">
+		<div class="basket__head">
+			<button class="basket-close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+			</button>
+			<div class="name">
+				<h3>Корзина</h3>
+			</div>
+		</div>
+		<div class="basket__body">
+			<figure class="basket__item">
+				<img src="http://sushiyou.ru/assets/images/products/184/x220/salat-czezar.jpg" alt="popular img">
 
+				<figcaption>
+					<h3 class="basket__item-title">Цезарь с курицей</h3>
+
+					<div class="basket__item-price">
+						<strong>230 &#8381;</strong>
+					</div>
+
+					<div class="basket__item-buy">
+						<div class="input-group">
+							<span class="input-group__btn">
+								<button type="button">-</button>
+							</span>
+							<label>
+								<input type="text" name="count" value="1" min="1" max="100">
+							</label>
+							<span class="input-group__btn">
+								<button type="button">+</button>
+							</span>
+						</div>
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="basket__total">
+			<span><strong>Сумма:</strong> 230 &#8381;</span>
+		</div>
+		<div class="basket__footer">
+			<button class="clear">Очистить</button>
+			<button class="order">Оформить</button>
+		</div>
+	</div>
 	<main class="home-page">
 		<section class="promo">
 			<button class="promo__prev" aria-label="prev slide">
@@ -32,7 +75,7 @@
 						<img src="https://images.pexels.com/photos/2762939/pexels-photo-2762939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="promo-list img">
 					</figure>
 					<figure class="promo-list__item">
-						<a href="#">Еще чего-то</a>
+						<a href="#">Бургеры</a>
 						<img src="https://images.pexels.com/photos/1082342/pexels-photo-1082342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="promo-list img">
 					</figure>
 					<figure class="promo-list__item">
